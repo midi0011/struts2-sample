@@ -6,12 +6,12 @@ public class Todolist {
 	private Integer id;
 	private String title;
 	private String description;
-	private TaskStatus status;
+	private String status;
 	
 	public Todolist() {
 	}
 	
-	public Todolist(Integer id, String title, String description, TaskStatus status) {
+	public Todolist(Integer id, String title, String description, String status) {
 		super();
 		this.id = id;
 		this.title = title;
@@ -37,10 +37,10 @@ public class Todolist {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public TaskStatus getStatus() {
+	public String getStatus() {
 		return status;
 	}
-	public void setStatus(TaskStatus status) {
+	public void setStatus(String status) {
 		this.status = status;
 	}
 	
