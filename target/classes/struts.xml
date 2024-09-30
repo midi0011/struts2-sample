@@ -31,7 +31,7 @@
 	<!-- /api is the namespace of REST calls, second part "struts" for Non-REST 
 		calls -->
 	<constant name="struts.mapper.prefixMapping"
-		value="/api:rest,:struts" />
+			  value="/api:rest,:struts" />
 
 	<!-- set name space for REST, it should match with "struts.mapper.prefixMapping" -->
 	<constant name="struts.rest.namespace" value="/api" />
@@ -44,7 +44,18 @@
 			class="com.hamidi.struts.rest.TodolistController">
 			<param name="id">{1}</param>
 		</action>
+<!--		<action name="todosv2/*"-->
+<!--				class="com.hamidi.struts.rest.TodolistController2">-->
+<!--			<param name="id">{1}</param>-->
+<!--		</action>-->
 	</package>
+
+<!--	<package name="default" extends="struts-default">-->
+<!--		<action name="testConnection" class="com.hamidi.struts.actions.TodolistAction" method="testConnection">-->
+<!--			<result name="success">/success.jsp</result>-->
+<!--			<result name="error">/error.jsp</result>-->
+<!--		</action>-->
+<!--	</package>-->
 
 </struts>
 
